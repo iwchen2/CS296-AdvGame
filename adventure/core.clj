@@ -28,8 +28,13 @@
               :title "the kitchen"
               :dir {:south :greathall 
                     :east :dining-hall
-                    :west :pantry}
+                    :west :pantry
+                    :down :wine-cellar}
               :content []}
+   :wine-cellar {:desc "Lots of wine here."
+                 :title "the wine cellar"
+                 :dir{:up :kitchen}
+                 :content []}
    :dining-hall {:desc "A place to eat."
                   :title "the dining hall"
                   :dir {:west :kitchen
